@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- css fájlok beszúrása. -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body style="transition: all 1s;">
+        <!-- Navigáció -->
+        <nav>
+            <a href="http://origo.hu" target="_blank">Origó</a>
+            <a href="pages/about.html">Rólunk</a>
+            <a href="#section1">1. szekció</a>
+            <a href="#section2">2. szekció</a>
+            <a href="#" onclick="bigSection()">Szekció növelése</a>
+        </nav>
+        
+        <!-- első szekció -->
+        <section id="section1">
+        
+                <!-- új bejegyzés -->
+            <article>
+                <h1>ITFactory tanfolyam</h1>
+                <p>HTML5 tanfolyam az <br> ITFactory gondozásában</p>
+                <img 
+                    src="http://www.itfactory.hu/Content/Styles/ITF_NewSkin/img/logo.png"
+                    style="max-width: 100px; border: 5px solid black;"
+                    id="img1"
+                    class="test-images">
+            </article>
+        </section>
+        
+  
+ 
+        <section id="section2">
+            <!-- Aside elem -->
+            <aside style="float: left;">
+                <h3>Oldlara csoportosított elemek</h3>
+            </aside>
+            <aside style="float: left;">
+                <h3>Oldlara csoportosított elemek</h3>
+            </aside>
+        </section>
+        
+
+        
+        <footer style="position: fixed; left:0; right: 0; bottom: 0;">
+            &copy; Kovács Nándor
+        </footer>
+        
+        <!-- js fájlok beszúrása -->
+        
+        <script src="js/main.js"></script>
+        
+    </body>
+    
+</html>

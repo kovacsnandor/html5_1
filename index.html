@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- css fájlok beszúrása. -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body style="transition: all 1s;">
+        <!-- Navigáció -->
+        <nav>
+            <a href="http://origo.hu" target="_blank">Origó</a>
+            <a href="pages/about.html">Rólunk</a>
+            <a href="#section1">1. szekció</a>
+            <a href="#section2">2. szekció</a>
+            <a href="#" onclick="bigSection()">Szekció növelése</a>
+        </nav>
+        <!-- /Navigáció -->
+        
+        <!-- Első szekció -->
+        <section id="section1">
+        
+            <!-- új bejegyzés -->
+            <article>
+                <h1>Regisztráció</h1>
+                <p>Kérjük adja meg adatait</p>
+                
+                <form novalidate method="post" action="http://nettuts.hu/post">
+                    
+                    <!-- Email -->
+                    <label for="email1">Email cím: </label>
+                    <input type="email" id="email1" autofocus name="email">
+                    <br>
+                    
+                    <!-- Gyermekek száma -->
+                    <label for="gysz">Gyermekek száma: </label>
+                    <input type="number" id="gysz" max="0" min="12" name="gysz">
+                    <br>
+                    
+                    <!-- Születési idő -->
+                    <label for="bd1">Születési idő: </label>
+                    <input type="date" id="bd1" min="1950-01-01" max="2000-01-01"  name="bd1">
+                    <br>
+                    
+                    <!-- Jelszó -->
+                    <label for="password1">Jelszó: </label>
+                    <input type="password" id="password1" name="password">
+                    <br>
+                    
+                    <!-- Szín -->
+                    <label for="szin1">Kedvenc színed: </label>
+                    <input type="color" id="szin1" name="szin">
+                    <br>     
+                    
+                    <!-- Fájl -->
+                    <label for="foto">Profilkép: </label>
+                    <input type="file" id="foto">
+                    <br>
+                    
+                    <input type="submit" value="Regisztrálok">
+                </form> 
+                
+            </article>
+        </section>
+        <!-- /Első szekció -->
+        
+  
+        <!-- Lábléc -->
+        <footer style="position: fixed; left:0; right: 0; bottom: 0;">
+            &copy; Kovács Nándor
+        </footer>
+        <!-- /Lábléc -->
+        
+        <!-- js fájlok beszúrása -->
+          <script src="js/main.js"></script>
+        <!-- /js fájlok beszúrása -->
+        
+    </body>
+    
+</html>
